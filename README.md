@@ -1,5 +1,5 @@
 # unused-deps-1
-Repro for an issue with rules_scala unused deps
+False-positive repro rules_scala unused deps
 
 In this repo there are 3 targets:
 
