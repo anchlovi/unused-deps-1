@@ -1,4 +1,5 @@
-load("@io_bazel_rules_scala//scala:scala_toolchain.bzl", "scala_toolchain")
+package(default_visibility = ["//visibility:public"])
+load("@io_bazel_rules_scala//scala:scala_toolchain.bzl", "scala_toolchain",)
 
 scala_toolchain(
     name = "toolchain_impl",
