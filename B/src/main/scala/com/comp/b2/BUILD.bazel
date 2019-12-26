@@ -1,0 +1,8 @@
+package(default_visibility = ["//visibility:public"])
+load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library",)
+
+scala_library(
+    name = "b2",
+    srcs = ["B2.scala"],
+    deps = ["//B/src/main/scala/com/comp/b3"]
+)

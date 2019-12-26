@@ -1,0 +1,19 @@
+load("@io_bazel_rules_scala//scala:scala_toolchain.bzl", "scala_toolchain")
+
+scala_toolchain(
+    name = "toolchain_impl",
+    scalacopts = [
+        "-unchecked",
+        "-deprecation",
+    ],
+    plus_one_deps_mode = "on",
+    visibility = ["//visibility:public"],
+    unused_dependency_checker_mode = "warn",
+)
+
+toolchain(
+    name = "toolchain",
+    toolchain = "toolchain_impl",
+    toolchain_type = "@io_bazel_rules_scala//scala:toolchain_type",
+    visibility = ["//visibility:public"],
+)
