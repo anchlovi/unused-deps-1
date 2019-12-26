@@ -42,3 +42,5 @@ You can use the following buildozer command:
 buildozer 'remove deps //src/main/scala/com/comp/b3:b3' //src/main/scala/com/comp/b2:b2
 one warning found
 ```
+
+The issue is not reproduced when changing the java interface to be a scala class (object, trait, etc...)
