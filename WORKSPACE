@@ -2,8 +2,8 @@ workspace(name = "ext_repo")
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-rules_scala_version="8724a32b45a7be02ec66aa64bb71fdd3d573fe9f" # update this as needed
-rules_scala_version_sha256="7f4f1d09441d7b295d186a0dd928509345b75667b2efdd78d355ff57e3fc67cf"
+rules_scala_version="dd699df9d65c4768f09e9135f1f3673d599dd330" # update this as needed
+rules_scala_version_sha256="e14011a7698bf7442bc7083658a6ebbed038b94916c344529a239225d0bb7a3a"
 
 http_archive(
     name = "io_bazel_rules_scala",
